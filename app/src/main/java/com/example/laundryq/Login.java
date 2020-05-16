@@ -43,28 +43,4 @@ public class Login extends AppCompatActivity {
 
     }
 
-    public static void addTextChangedListener(EditText e, final TextInputLayout t) {
-        e.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.length() > 0) {
-                    if (!TextUtils.isEmpty(t.getError())) {
-                        t.setError(null);
-                        t.setErrorEnabled(false);
-                    }
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-    }
-
 }
