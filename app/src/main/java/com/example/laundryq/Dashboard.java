@@ -17,7 +17,7 @@ public class Dashboard extends AppCompatActivity {
         pc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent log = new Intent(Dashboard.this ,Login.class);
+                Intent log = new Intent(Dashboard.this ,Pickup.class);
                 startActivity(log);
             }
         });
