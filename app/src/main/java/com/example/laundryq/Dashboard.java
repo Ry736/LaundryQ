@@ -21,5 +21,29 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(log);
             }
         });
+        CardView ct = findViewById(R.id.contact);
+        ct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent log = new Intent(Dashboard.this ,Contact.class);
+                startActivity(log);
+            }
+        });
+        CardView st = findViewById(R.id.status);
+        st.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent log = new Intent(Dashboard.this ,Status.class);
+                startActivity(log);
+            }
+        });
+        CardView mp = findViewById(R.id.maps);
+        mp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent log = new Intent(Dashboard.this ,MapsActivity.class);
+                startActivity(log);
+            }
+        });
     }
 }

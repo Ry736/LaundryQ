@@ -17,4 +17,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">#ffc0cb</item>
     </style>
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/spl2</item>
+    </style>
 </resources>

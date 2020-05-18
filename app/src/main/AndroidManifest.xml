@@ -37,7 +37,8 @@
         <activity android:name=".Pickup" />
         <activity android:name=".Dashboard" />
         <activity android:name=".Regist" />
-        <activity android:name=".Login">
+        <activity android:name=".Login"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

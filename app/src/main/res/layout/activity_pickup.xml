@@ -10,23 +10,30 @@
     android:layout_height="200dp"
     android:background="#E91E63"
     android:paddingLeft="30dp"
-    android:id="@+id/head">
+    android:id="@+id/head"
+    android:orientation="horizontal">
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pick-Up"
+        android:text="Pick\nUp"
         android:layout_gravity="center_vertical"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:fontFamily="sans-serif"
-        android:textSize="80dp"/>
+        android:textSize="60dp"/>
+    <ImageView
+    android:paddingLeft="25dp"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:layout_gravity="right"
+    android:src="@drawable/pick" />
 </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/head"
         android:id="@+id/satu"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:orientation="vertical"
         android:gravity="center">
         <EditText
@@ -35,6 +42,7 @@
             android:drawableStart="@drawable/name_ic"
             android:layout_centerInParent="true"
             android:id="@+id/nama"
+            android:drawablePadding="5dp"
             android:backgroundTint="#000000"
             android:hint=" Name"/>
         <EditText
@@ -44,15 +52,17 @@
             android:layout_marginTop="20dp"
             android:layout_centerInParent="true"
             android:id="@+id/alamat"
+            android:drawablePadding="5dp"
             android:backgroundTint="#000000"
             android:hint=" Alamat"/>
         <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:drawableStart="@drawable/alamat_ic"
+            android:drawableStart="@drawable/nomer_ic"
             android:layout_marginTop="20dp"
             android:layout_centerInParent="true"
             android:id="@+id/no"
+            android:drawablePadding="5dp"
             android:backgroundTint="#000000"
             android:hint=" No Telpon"
             android:inputType="phone"/>
@@ -63,11 +73,16 @@
             android:gravity="center"
             android:layout_marginTop="20dp">
             <Spinner
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/jenis"/>
+            <Spinner
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/type"/>
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:backgroundTint="#000000"
@@ -78,24 +93,27 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="55dp">
-            <Button
+            <ImageButton
                 android:id="@+id/picker"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 style="@style/Widget.AppCompat.Button.Colored"
-                android:hint="Tanggal"/>
+                android:src="@drawable/ic_date_range_black_24dp"/>
             <TextView
                 android:id="@+id/date"
+                android:text="Waktu Pickup"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="20dp" />
+                android:layout_height="wrap_content" />
         </LinearLayout>
         <Button
             android:id="@+id/buttonp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="@drawable/button_design"
             android:layout_marginTop="30dp"
+            android:textColorHint="@color/white"
             android:hint="Pick"/>
     </LinearLayout>
 
